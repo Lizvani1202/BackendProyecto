@@ -12,7 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 public class JwtAuthentiacionTokenFilter extends AbstractAuthenticationProcessingFilter {
-    protected JwtAuthentiacionTokenFilter() {
+    public JwtAuthentiacionTokenFilter() {
         super("/api/**");
     }
 
