@@ -5,7 +5,7 @@ import java.io.Serializable;
 import java.util.Date;
 
 @Entity
-@Table(name = "users")
+@Table(name = "usuario")
 public class User implements Serializable {
 
     @Id
@@ -13,7 +13,13 @@ public class User implements Serializable {
     private Long user_id;
 
     @Column
-    private String name;
+    private String primerNombre;
+
+    @Column
+    private String apellidos;
+
+    @Column
+    private String celular;
 
     @Column(unique = true)
     private String email;
@@ -38,12 +44,28 @@ public class User implements Serializable {
         this.user_id = user_id;
     }
 
-    public String getName() {
-        return name;
+    public String getPrimerNombre() {
+        return primerNombre;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setPrimerNombre(String primerNombre) {
+        this.primerNombre = primerNombre;
+    }
+
+    public String getApellidos() {
+        return apellidos;
+    }
+
+    public void setApellidos(String apellidos) {
+        this.apellidos = apellidos;
+    }
+
+    public String getCelular() {
+        return celular;
+    }
+
+    public void setCelular(String celular) {
+        this.celular = celular;
     }
 
     public String getEmail() {

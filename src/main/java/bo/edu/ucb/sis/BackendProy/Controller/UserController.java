@@ -45,7 +45,7 @@ public class UserController {
 
             return new ResponseEntity<>((Collections.singletonMap("jwtToken", jwtGenerator.generate(jwtUser))),HttpStatus.CREATED);
         }else{
-            return new ResponseEntity<Void>(HttpStatus.CONFLICT);
+            return new ResponseEntity<Void>(HttpStatus.NOT_FOUND);
         }
     }
 }

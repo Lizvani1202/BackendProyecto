@@ -1,5 +1,5 @@
 server:
-  port: 8008
+  port: 8009
 spring:
 
   application:
@@ -7,7 +7,7 @@ spring:
 
   datasource:
     platform: mysql
-    url: jdbc:mysql://localhost:3306/sis_gis?useSSL=false
+    url: jdbc:mysql://localhost:3306/bddsisgis?useSSL=false
     username: root
     password: 12345678
     hikari:
